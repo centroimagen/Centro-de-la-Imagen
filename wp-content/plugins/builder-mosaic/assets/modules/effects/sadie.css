@@ -1,0 +1,46 @@
+.tbm_eff_sadie figcaption::before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:0;
+	transform:translate3d(0,50%,0)
+}
+.module .tbm_eff_sadie .tbm_title{
+	position:absolute;
+	top:50%;
+	left:0;
+	width:100%;
+	transition:transform .35s,color .35s;
+	transform:translate3d(0,-50%,0)
+}
+.tbm_eff_sadie figcaption::before,
+.module .tbm_eff_sadie .tbm_caption{
+	transition:opacity .35s,transform .35s
+}
+.module .tbm_eff_sadie .tbm_caption{
+	position:absolute;
+	bottom:0;
+	left:0;
+	padding:0 2em 2em;
+	width:100%;
+	opacity:0;
+	transform:translate3d(0,10px,0);
+	line-height:normal
+}
+.module .tbm_eff_sadie:hover .tbm_title{
+	color:#fff;
+	transform:translate3d(0,-50%,0) translate3d(0,-40px,0)
+}
+.tbm_eff_sadie:hover figcaption::before ,
+.module .tbm_eff_sadie:hover .tbm_caption{
+	opacity:1;
+	transform:translate3d(0,0,0)
+}
+@media(max-width:600px){
+	.module .tbm_eff_sadie img{
+		width:100%
+	}
+}

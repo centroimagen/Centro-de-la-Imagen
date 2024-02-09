@@ -1,0 +1,74 @@
+.mce-i-ptb-favicon:before {
+	content: "\f119";
+	font-size: 21px;
+	font-family: dashicons;
+}
+
+#ptb_shortcode_dialog{
+    max-height: 620px;
+    overflow-x: hidden;
+    min-width: 400px;
+    overflow-y: auto;
+    margin-top: 50px;
+    padding: 10px 25px 10px 10px;
+}
+#ptb_shortcode_dialog .ptb_group_container{
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+#ptb_shortcode_dialog .mce-i-checkbox{
+    cursor: pointer;
+}
+#ptb_shortcode_dialog  .mce-ptb_meta_items{
+    width:282px;
+}
+#ptb_shortcode_dialog .mce-ptb_group_meta_multiselect .mce-ptb_meta_items{
+    width:280px;
+}
+#ptb_shortcode_dialog .mce-ptb_group_meta_label{
+    width:140px;
+}
+
+#ptb_shortcode_dialog .mce-ptb_group_meta_label.mce-ptb_meta_exist_empty{
+    width:171px;
+}
+#ptb_shortcode_dialog .mce-ptb_group_meta_multiselect .mce-ptb_group_meta_label,
+#ptb_shortcode_dialog .mce-ptb_group_meta_multiselect .mce-ptb_meta_exist{
+    margin-top: 30px;
+}
+#ptb_shortcode_dialog .mce-ptb_group_meta_label,
+#ptb_shortcode_dialog .mce-ptb_meta_exist{
+    margin-top:6px;
+}
+#ptb_shortcode_dialog .mce-ptb_meta_exist{
+    padding-right: 10px;
+}
+#ptb_shortcode_dialog .mce-ptb_meta_small_select + .mce-ptb_meta_items{
+    width: 170px;
+}
+#ptb_shortcode_dialog .mce-ptb_meta_small_select{
+    width:50px;
+}
+#ptb_shortcode_dialog .mce-ptb_meta_small_input{
+    width:52px;
+}
+#ptb_shortcode_dialog .mce-ptb_meta_space{
+    visibility: hidden;
+    width: 35px;
+}
+#ptb_shortcode_dialog .mce-ptb_meta_number_from,
+#ptb_shortcode_dialog .mce-ptb_meta_number_to+.mce-ptb_meta_small_select{
+    margin-left: 10px;
+}
+#ptb_shortcode_dialog .mce-ptb_meta_number_from{
+    transition: width .3s ease-out .3s;
+}
+.mce-container .mce-ptb_tinymce_spacer{
+    border-bottom: 1px dashed #ccc;
+    visibility: visible;
+}
+.mce-window .mce-window-head .mce-title{
+    text-align: center;
+}

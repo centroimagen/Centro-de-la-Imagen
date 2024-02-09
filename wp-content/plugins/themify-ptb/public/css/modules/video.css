@@ -1,0 +1,70 @@
+.ptb_extra_video_item iframe,
+.ptb_extra_video_item video{
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.ptb_extra_video img{
+    width:100%;
+}
+.ptb_extra_video_overlay_wrap{
+    position:relative;
+    padding-bottom:56.25%; /* 16:9 */
+    overflow:hidden;
+    height:0;
+}
+.ptb_extra_video_overlay{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:1000;
+}
+.ptb_extra_video_title {
+	margin: .6em 0;
+}
+.ptb_video .bx-wrapper a,
+.ptb_extra_video_item a.ptb_extra_video_lightbox,
+.ptb_extra_video_item .ptb_extra_video_title a{
+    border:none;
+    text-decoration:none;
+}
+video.ptb_extra_icon{
+    vertical-align:top;
+}
+.ptb_extra_play_icon{
+	color:#fff;
+	border:3px solid #fff;
+	padding:12px;
+	width:60px;
+	height:60px;
+    position:absolute;
+    text-align:center;
+    z-index:1;
+    cursor:pointer;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+	border-radius:50%;
+}
+.ptb_extra_play_icon svg {
+	font-size:24px;
+	line-height:1;
+	color:#fff;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-40%,-50%);
+}
+
+/* in Themify framework div.tf_vd_lazy is added with its own play button,
+ * this prevents double Play buttons from showing.
+ */
+.ptb_extra_video_overlay_wrap .ptb_extra_play_icon:not(:only-of-type) {
+	display: none;
+}

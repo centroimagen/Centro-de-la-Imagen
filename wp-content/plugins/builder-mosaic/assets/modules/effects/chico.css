@@ -1,0 +1,41 @@
+.tbm_eff_chico .tbm_caption_wrapper{
+	position:absolute;
+	width:100%;
+	top:50%;
+	transform:translateY(-50%);
+	padding:0 2em
+}
+.module .tbm_eff_chico img{
+	transition:opacity .35s,transform .35s;
+	transform:scale(1.12)
+}
+.module .tbm_eff_chico figcaption{
+	padding:0
+}
+.tbm_eff_chico figcaption::before{
+	position:absolute;
+	inset:30px;
+	border:1px solid rgba(255,255,255,.6);
+	content:'';
+	transform:scale(1.1)
+}
+.tbm_eff_chico figcaption::before,
+.module .tbm_eff_chico .tbm_caption{
+	opacity:0;
+	transition:opacity .35s,transform .35s
+}
+.module .tbm_eff_chico .tbm_caption{
+	margin:0 auto;
+	transform:scale(1.5);
+	width:100%;
+	max-width:none
+}
+.module .tbm_eff_chico:hover img{
+	opacity:.5;
+	transform:scale(1)
+}
+.tbm_eff_chico:hover figcaption::before,
+.module .tbm_eff_chico:hover .tbm_caption{
+	opacity:1;
+	transform:scale(1)
+}

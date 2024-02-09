@@ -1,0 +1,42 @@
+.module .tbm_eff_dexter img{
+	transition:opacity .35s
+}
+.module .tbm_eff_dexter .tbm_title{
+	position:relative;
+	z-index:1;
+	padding:50px 60px
+}
+.tbm_eff_dexter figcaption::after{
+	position:absolute;
+	right:30px;
+	bottom:30px;
+	left:30px;
+	height:calc(50% - 30px);
+	border:7px solid rgba(255,255,255,.4);
+	content:'';
+	transition:transform .35s;
+	transform:translate3d(0,-100%,0)
+}
+.module .tbm_eff_dexter figcaption{
+	padding:0;
+	text-align:left
+}
+.module .tbm_eff_dexter .tbm_caption{
+	position:absolute;
+	right:60px;
+	bottom:55px;
+	left:60px;
+	opacity:0;
+	transition:opacity .35s,transform .35s;
+	transform:translate3d(0,-100px,0)
+}
+.tbm_eff_dexter:hover figcaption::after{
+	transform:translate3d(0,0,0)
+}
+.module .tbm_eff_dexter:hover img{
+	opacity:.4
+}
+.module .tbm_eff_dexter:hover .tbm_caption{
+	opacity:1;
+	transform:translate3d(0,0,0)
+}

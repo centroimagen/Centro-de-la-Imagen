@@ -1,0 +1,38 @@
+.tbm_eff_ruby .tbm_caption_wrapper{
+	position:absolute;
+	width:100%; 
+	top:50%;
+	transform:translateY(-50%);
+	padding:1.5em
+}
+.module .tbm_eff_ruby figcaption{
+	padding:0
+}
+.module .tbm_eff_ruby img{
+	opacity:.7;
+	transition:opacity .35s,transform .35s;
+	transform:scale(1.15)
+}
+.module .tbm_eff_ruby .tbm_title{
+	transition:transform .35s;
+	transform:translate3d(0,20px,0)
+}
+.module .tbm_eff_ruby .tbm_caption{
+	margin:1em 0 0;
+	padding:1.5em;
+	border:1px solid rgba(255,255,255,.6);
+	opacity:0;
+	transition:opacity .35s,transform .35s;
+	transform:translate3d(0,20px,0) scale(1.1)
+} 
+.module .tbm_eff_ruby:hover img{
+	opacity:.5;
+	transform:scale(1)
+}
+.module .tbm_eff_ruby:hover .tbm_title{
+	transform:translate3d(0,0,0)
+}
+.module .tbm_eff_ruby:hover .tbm_caption{
+	opacity:1;
+	transform:translate3d(0,0,0) scale(1)
+}

@@ -1,0 +1,27 @@
+.module-mosaic .product .price{
+	display:block;
+	font-size:1.2em;
+	margin:0 0 .4em
+}
+.module-mosaic .product .add_to_cart_button{
+	color:#fff;
+	border:solid 1px;
+	padding:.3em .7em;
+	margin:.6em 0 1em;
+	display:inline-block;
+	text-decoration:none;
+	border-radius:8px
+}
+.module-mosaic .product .added_to_cart{
+	margin-left:5px
+}
+.module-mosaic .product .tbm_caption_wrapper .added_to_cart,
+.module-mosaic .product .tbm_caption_wrapper .add_to_cart_button{
+	pointer-events:auto
+}
+.module-mosaic .product .add_to_cart_button:hover{
+	text-decoration:none;
+	background:#fff;
+	color:#666;
+	border-color:#fff
+}

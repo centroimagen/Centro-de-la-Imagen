@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"discover.min.js",
+"lineCount":5,
+"mappings":"A;;;;AAOA,GAAsB,WAAtB,GAAI,MAAOA,OAAX,CAEI,IAAIA,OAAS,EAGc,YAA/B,GAAI,MAAOA,OAAOC,CAAAA,QAAlB,GAEID,MAAOC,CAAAA,QAFX,CAEsB,EAFtB,CAKAD,OAAOE,CAAAA,MAAOC,CAAAA,aAAd,CAA4B,QAAS,EACrC,CACIH,MAAOI,CAAAA,aAAcC,CAAAA,IAArB,CAAA,OAAA,CAAuCL,MAAOE,CAAAA,MAAOI,CAAAA,UAAd,CAAyB,8BAAzB,CAAyD,EAAzD,CAEvCN,OAAOE,CAAAA,MAAOK,CAAAA,gBAAd,CAA+B,eAA/B,CAAgD,OAAhD,CAAyD,QAAS,EAClE,CACI,IAAIC,EAAYC,QAASC,CAAAA,cAAT,CAAwB,WAAxB,CAEhBV,OAAOI,CAAAA,aAAcO,CAAAA,SAArB,CAA+BH,CAAUI,CAAAA,KAAzC,CAAgDJ,CAAhD,CAEA,OAAO,CAAA,CALX,CADA,CAHJ,CADA;",
+"sources":["../../uncompressed/js/solo/discover.js"],
+"names":["akeeba","Discover","System","documentReady","Configuration","URLs","getOptions","addEventListener","directory","document","getElementById","onBrowser","value"]
+}

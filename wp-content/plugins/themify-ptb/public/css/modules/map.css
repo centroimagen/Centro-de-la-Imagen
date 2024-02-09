@@ -1,0 +1,10 @@
+.ptb_extra_map{
+    width:100%;
+    margin-bottom:1.8em;
+}
+.ptb_post .ptb_module .ptb_extra_map img{
+    display:inline;
+}
+.ptb_module.ptb_map img{
+	max-width:initial;
+}

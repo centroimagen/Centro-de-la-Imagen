@@ -1,0 +1,122 @@
+/* alert message  
+---------------------------------------------------------------*/
+div.ptb_alert{
+    margin:-20px 0 0 -20px;
+    height:62px;
+    width:62px;
+    background-color:rgba(0,0,0,.6);
+    position:fixed;
+    top:50%;
+    left:50%;
+    z-index:999999;
+    border-radius:100%;
+    display:none;
+    padding:0 ;
+    border:none;
+}
+div.ptb_alert:before{
+    content:'';
+    display:flex;
+    text-align:center;
+    margin:auto;
+    justify-content:center;
+    align-items:center;
+}
+div.ptb_alert.done:before{
+    width:14px;
+    height:30px;
+    border-right:4px solid;
+    border-bottom:4px solid;
+    transform:rotate(45deg) skew(10deg);
+    margin-top:19px;
+}
+div.ptb_alert.error:before,
+div.ptb_alert.error:after{
+    content:'';
+    height:42%;
+    width:4px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) rotate(45deg);
+    background:currentColor;
+    transition:transform .25s;
+}
+div.ptb_alert.error:after{
+    transform:translate(-50%,-50%) rotate(-45deg);
+}
+div.ptb_alert.busy:before{
+    width:80%;
+    height:80%;
+    border:5px solid transparent;
+    border-top-color:#fff;
+    border-radius:50%;
+    box-sizing:border-box;
+    position:absolute;
+    top:10%;
+    left:10%;
+    content:'';
+    animation:spin 1.4s infinite linear;
+}
+.ptb_meta_slug_error{
+    color: #f00 !important;
+    border-color: #f00 !important;
+}
+@keyframes spin{
+    to{transform:rotate(1turn)}
+}
+
+/* PTB Icon Picker */
+/*====================================================================================================================*/
+#ptb_icon_picker_wrap h2 {
+    text-align: center
+}
+#ptb_icon_picker_wrap .tf_close{
+    top:11px;
+    right:11px;
+    cursor:pointer
+}
+.ptb_icons_groups{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(33%, 1fr));
+    gap:3px
+}
+.ptb_icons_groups a{
+    color:#a5a5a5;
+    text-decoration:none;
+    border-radius:12px;
+    line-height:1;
+    padding:7px 0 7px 14px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    transition:none
+}
+.ptb_icons_groups a:hover{
+    background:#9a9a9a;
+    color:#fff
+}
+.ptb_icons_groups a svg{
+    color:#333;
+    font-size: 1.5em;
+    margin-right: 1em;
+    transition:none
+}
+.ptb_icons_groups a:hover svg{
+    color:inherit
+}
+#ptb_icon_picker_wrap .tf_close.mfp-close:hover{
+    background:0
+}
+
+.ptb_icon_picker_open .mfp-wrap {
+	z-index: 999999; /* display on top of Themify Builder */
+}
+.ptb_icon_picker_open .mfp-content {
+	width: 900px;
+	height: 500px;
+	overflow-y: scroll;
+	border-radius:12px;
+	max-width:90%;
+	box-shadow:0 1px 20px 3px rgb(0 0 0 / .4);
+}
