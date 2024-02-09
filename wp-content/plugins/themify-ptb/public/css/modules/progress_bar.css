@@ -1,0 +1,60 @@
+.ptb_module.ptb_progress_bar{
+	margin:0 0 2em;
+}
+.ptb_module.ptb_progress_bar:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+.ptb_single_lightbox .ptb_extra_progress_bar{
+    opacity:0;
+    transition:opacity 1s ease-in-out;
+}
+.ptb_single_lightbox .ptb_extra_progress_bar.ptb_extra_progress_bar_done{
+	opacity:1;
+}
+.ptb_extra_progress_item>div{
+    display:inline-block;
+    vertical-align:middle;
+}
+.ptb_extra_progress_horizonal .ptb_extra_progress_bar_label,
+.ptb_extra_progress_horizonal .ptb_extra_progress_bar,
+.ptb_extra_progress_horizonal .ptb_extra_progress_item{
+    width:100%;
+    float:left;
+}
+.ptb_extra_progress_horizonal .ptb_extra_progress_item{
+    margin:5px 0 10px
+}
+.inner-therm{
+    position:relative;
+}
+.inner-therm span{
+    position:absolute;
+    right:0;
+    top:-38px;
+    font-size:.9em;
+}
+
+.vertical.outer-therm{
+    position:relative;
+}
+.vertical.inner-therm{
+    position:absolute;
+    bottom:0;
+}
+.ptb_progress_bar .outer-therm{
+    margin:0;
+    border-radius:0;
+}
+.ptb_extra_progress_vertical .ptb_extra_progress_item{
+    float:left;
+    margin-left:30px;
+    text-align:center;
+}
+.ptb_extra_progress_vertical .ptb_extra_progress_bar_label{
+    display:block;
+}
+.ptb_extra_progress_vertical .ptb_extra_progress_item:first-child{
+    margin-left:0;
+}

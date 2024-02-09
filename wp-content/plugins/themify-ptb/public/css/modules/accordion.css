@@ -1,0 +1,28 @@
+.ptb_extra_accordion{
+	margin:0 0 1em;
+}
+.ptb_extra_accordion .ptb_accordion_title{
+	background-color:#F7F7F7;
+	color:#444;
+	cursor:pointer;
+	padding:.4em 1em;
+	width:100%;
+	border:1px solid rgba(0,0,0,.05);
+	text-align:left;
+	outline:none;
+	transition:0.4s;
+	font-size:105%;
+	line-height:140%;
+	font-weight:bold;
+	box-sizing:border-box;
+}
+.ptb_extra_accordion .ptb_accordion_title.ptb-accordion-active, .ptb_extra_accordion .ptb_accordion_title:hover{
+  background-color:#f1f1f1;
+}
+.ptb_extra_accordion .ptb_accordion_panel{
+  padding:1em;
+  display:none;
+  overflow:hidden;
+  transition:max-height 0.2s ease-out;
+    white-space:pre-wrap
+}

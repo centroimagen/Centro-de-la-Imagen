@@ -1,0 +1,33 @@
+.ptb_extra_files,
+.ptb_extra_files li{
+    padding:0;
+    margin:0;
+}
+.ptb_extra_files li{
+    list-style:none; 
+}
+.ptb_extra_files_block li{
+    clear:both;
+    margin-bottom:10px;
+}
+.ptb_extra_files_list li{
+    float:left;
+    margin-right:10px;
+}
+.ptb_extra_files li:last-child{
+    margin:0;
+}
+.ptb_extra_files li a{
+    text-decoration:none;
+}
+.ptb_extra_files li a:hover{
+    text-decoration:underline;
+}
+.ptb_extra_files .ptb_extra_file_icons a{
+    vertical-align:middle;
+}
+.ptb_extra_files .ptb_extra_file_icons {
+    vertical-align:middle;
+    font-size:1.5em;
+    margin-right:10px;
+}

@@ -1,0 +1,45 @@
+.ptb_module.ptb_gallery{
+    width:100%;
+    margin-bottom:1.8em;
+    overflow:hidden;
+}
+.ptb_extra_showcase .ptb_extra_main_image{
+    text-align:center;
+    margin-bottom:10px;
+    position:relative;
+}
+.ptb_extra_showcase .ptb_extra_main_image img{
+    cursor:default;
+}
+.ptb_extra_showcase .ptb_extra_main_image a img{
+	cursor:pointer;
+}
+.ptb_extra_showcase .ptb_extra_gallery{
+    clear:both;
+}
+.ptb_extra_showcase .ptb_extra_gallery_description{
+    position:absolute;
+    bottom:0;
+    box-sizing:border-box;
+    width:100%;
+    padding-left:7px;
+    color:#fff;
+    background:rgba(0,0,0,.5);
+}
+.ptb_extra_showcase .ptb_extra_gallery_item{
+    max-width:50px;
+    margin-right:5px;
+    margin-bottom:5px;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.ptb_gallery img{
+    width:100%;
+}
+.ptb_extra_showcase img{
+    cursor:pointer;
+}
+.ptb_extra_showcase .ptb_extra_item{
+    padding:0;
+}

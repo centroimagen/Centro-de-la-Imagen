@@ -1,0 +1,19 @@
+.ptb_search_map_disable{
+    opacity:.5;
+    cursor:wait;
+}
+.ptb_search_map_disable .chosen-container{
+    z-index:-1;
+}
+.ptb_search_map_disable .ptb_search_select_wrap{
+    position:relative;
+}
+.ptb_search_map_disable .chosen-container:after{
+    content:"\f110";
+    font-family:FontAwesome;
+    animation:fa-spin 2s infinite linear;
+    position:absolute;
+    top:4px;
+    right:25px;
+    z-index:2;
+}

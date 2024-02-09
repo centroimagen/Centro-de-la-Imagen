@@ -1,0 +1,46 @@
+.module .tbm_eff_sarah img{
+	max-width:none;
+	width:calc(100% + 20px);
+	transition:opacity .35s,transform .35s;
+	transform:translate3d(-10px,0,0);
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden
+}
+.tbm_eff_sarah figcaption{
+	text-align:left
+}
+.module .tbm_eff_sarah .tbm_title{
+	position:relative;
+	overflow:hidden;
+	padding:.5em 0
+}
+.tbm_eff_sarah .tbm_title::after{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:3px;
+	background:rgba(255,255,255,.6);
+	content:'';
+	transition:transform .35s;
+	transform:translate3d(-100%,0,0)
+}
+.module .tbm_eff_sarah .tbm_caption{
+	opacity:0;
+	transition:opacity .35s,transform .35s;
+	transform:translate3d(100%,0,0)
+}
+.module .tbm_eff_sarah .tbm_caption p{
+	margin-bottom:0
+}
+.module .tbm_eff_sarah:hover img{
+	opacity:.4;
+	transform:translate3d(0,0,0)
+}
+.module .tbm_eff_sarah:hover h2::after{
+	transform:translate3d(0,0,0)
+}
+.module .tbm_eff_sarah:hover .tbm_caption{
+	opacity:1;
+	transform:translate3d(0,0,0)
+}

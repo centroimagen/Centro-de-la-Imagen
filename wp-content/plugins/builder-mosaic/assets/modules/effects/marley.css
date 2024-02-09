@@ -1,0 +1,45 @@
+.module .tbm_eff_marley .tbm_title,
+.module .tbm_eff_marley .tbm_caption{
+	position:absolute;
+	right:30px;
+	left:30px;
+	text-align:right;
+	padding:10px 0
+}
+.module .tbm_eff_marley .tbm_caption{
+	bottom:30px;
+	line-height:1.5;
+	transform:translate3d(0,100%,0)
+}
+.tbm_eff_marley figcaption,
+.module .tbm_eff_marley .tbm_caption p{
+	text-align:right
+}
+.module .tbm_eff_marley .tbm_title{
+	top:30px;
+	transition:transform .35s;
+	transform:translate3d(0,20px,0)
+}
+.module .tbm_eff_marley .tbm_title::after{
+	position:absolute;
+	top:100%;
+	left:0;
+	width:100%;
+	height:4px;
+	background:rgba(255,255,255,.6);
+	content:'';
+	transform:translate3d(0,40px,0)
+}
+.module .tbm_eff_marley .tbm_title::after,
+.module .tbm_eff_marley .tbm_caption{
+	opacity:0;
+	transition:opacity .35s,transform .35s
+}
+.module .tbm_eff_marley:hover .tbm_title{
+	transform:translate3d(0,0,0)
+}
+.module .tbm_eff_marley:hover .tbm_title::after,
+.module .tbm_eff_marley:hover .tbm_caption{
+	opacity:1;
+	transform:translate3d(0,0,0)
+}

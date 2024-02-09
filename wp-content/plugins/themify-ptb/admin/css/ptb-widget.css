@@ -1,0 +1,49 @@
+.ptb_widget_wrapper {
+    margin-top: 15px;
+	border: 1px solid #d1d2d4;
+    background-color: #f3f3f4;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.ptb_widget_wrapper .ptb_cmb_item_body {
+    padding: 7px 16px;
+}
+.ptb_widget_wrapper .ptb_cmb_item_body .ptb_cmb_input_row {
+    margin: 5px 0;
+}
+.ptb_widget_wrapper.ptb_widget_wrapper .ptb_cmb_item_body .ptb_cmb_input_label{
+    width: 32%;
+    padding: 0;
+    margin-right: 4%;
+	display: inline-block;
+}
+.ptb_widget_wrapper.ptb_widget_wrapper .ptb_cmb_item_body .ptb_cmb_input{
+    width: 60%;
+    position: relative;
+    vertical-align: middle;
+	display: inline-block;
+}
+.ptb_widget_wrapper select{
+    width: 100%;
+    box-sizing: border-box;
+}
+.ptb_widget_wrapper select,
+.ptb_widget_wrapper input[type="text"]{
+    margin: 0;
+}
+.ptb_widget_wrapper .spinner{
+    position: absolute;
+    margin: 0;
+    top: 4px;
+    right: -20px;
+    visibility: visible;
+    display: none;
+}
+.ptb_widget_wrapper.ptb_widget_wait .spinner{
+    display: block;
+}
+.ptb_widget_wrapper.ptb_widget_wait .ptb_recent_widget_items{
+    opacity: .5;
+    cursor: wait;
+}
+

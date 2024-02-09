@@ -1,0 +1,346 @@
+/* contact module */
+.module-contact .contact-error,
+.module-contact .contact-success{
+	padding:.5em;
+	border-radius:8px;
+	margin-bottom:1em
+}
+.module-contact .contact-error{
+	background-color:#e8311f;
+	color:#ffeeed
+}
+.module-contact .contact-success{
+	background-color:#9bd611;
+	color:#293807
+}
+.module span.required{
+	color: #f00
+}
+.module .builder-contact-field{
+	margin:0 0 .5em
+}
+.builder-contact-field-send .tf_loader{
+	margin-right:10px;
+	display:none
+}
+.builder-contact-field-send .tf_loader:before{
+	border-color:inherit;
+	border-left-color:rgba(149,149,149,.6)
+}
+.module .control-label,
+.builder-contact.sending .tf_loader{
+	display:inline-block
+}
+.module .builder-contact-field-send{
+	margin-top:1em
+}
+.builder-contact-field-send .tf_submit_icon{
+	margin-inline-end:5px
+}
+.module-contact input[type=checkbox]{
+	color:initial
+}
+/* Style 1 */
+.module.contact-style1 .control-label{
+	margin-bottom:.3em
+}
+.module-contact.contact-style1 input[type=number],
+.module-contact.contact-style1 input[type=tel],
+.module-contact.contact-style1 input[type=text],
+.module-contact.contact-style1 input[type=email]{
+	width:100%;
+	max-width:100%;
+	box-sizing:border-box
+}
+/* Style 2 */
+.module.contact-style3 .builder-contact-field input[type="number"],
+.module.contact-style3 .builder-contact-field input[type="email"],
+.module.contact-style3 .builder-contact-field input[type="tel"],
+.module.contact-style3 .builder-contact-field input[type="text"],
+.module.contact-style3 .builder-contact-field select,
+.module.contact-animated-label .builder-contact-field input[type="number"],
+.module.contact-animated-label .builder-contact-field input[type="email"],
+.module.contact-animated-label .builder-contact-field input[type="tel"],
+.module.contact-animated-label .builder-contact-field input[type="text"],
+.module.contact-animated-label .builder-contact-field select,
+.module.contact-style2 .builder-contact-field input[type="number"],
+.module.contact-style2 .builder-contact-field input[type="email"],
+.module.contact-style2 .builder-contact-field input[type="tel"],
+.module.contact-style2 .builder-contact-field input[type="text"],
+.module.contact-style2 .builder-contact-field select{
+	max-width:none;
+	width:100%;
+	box-sizing:border-box
+}
+.module.contact-style2 .builder-contact-field.builder-contact-field-send,
+.module.contact-style2 .builder-contact-field.builder-contact-field-captcha{
+	order:1
+}
+@media(min-width:681px){
+
+	.module .builder-contact-radio-field,
+	.module .builder-contact-checkbox-field{
+		width:100%;
+		clear:both
+	}
+	.module-contact label{
+		display:inline-block;
+		margin-right:10px
+	}
+	/* Style 2 */
+	.module.contact-animated-label .builder-contact-fields,
+	.module.contact-style2 .builder-contact-fields{
+		display:flex;
+		flex-wrap:wrap;
+		margin-left:-3.5%
+	}
+	.module.contact-animated-label .builder-contact-field,
+	.module.contact-style2 .builder-contact-field{
+		flex-grow:1;
+		justify-content:space-between;
+		padding-left:3.5%;
+		width:33.33%;
+		box-sizing:border-box
+	}
+        
+	.module.contact-style3 input[type=text], 
+	.module.contact-style3 input[type=password], 
+	.module.contact-style3 input[type=search], 
+	.module.contact-style3 input[type=email], 
+	.module.contact-style3 input[type=url], 
+	.module.contact-style3 input[type=tel],
+	.module.contact-style3 .builder-contact-field-gdpr,
+	.module.contact-style3 .builder-contact-static-field,
+	.module.contact-style3 .builder-contact-upload-field,
+	.module.contact-style3 .builder-contact-field.builder-contact-field-captcha,
+	.module.contact-style3 .builder-contact-field.builder-contact-field-optin,
+	.module.contact-style3 .builder-contact-field.builder-contact-field-sendcopy,
+	.module.contact-style3 .builder-contact-field.builder-contact-field-send,
+	.module.contact-animated-label .builder-contact-field-gdpr,
+	.module.contact-animated-label .builder-contact-static-field,
+	.module.contact-animated-label .builder-contact-upload-field,
+	.module.contact-animated-label .builder-contact-field.builder-contact-field-captcha,
+	.module.contact-animated-label .builder-contact-field.builder-contact-field-optin,
+	.module.contact-animated-label .builder-contact-field.builder-contact-field-sendcopy,
+	.module.contact-animated-label .builder-contact-field.builder-contact-field-send,
+	.module.contact-animated-label .builder-contact-field.builder-contact-textarea-field,
+	.module.contact-animated-label .builder-contact-textarea-field,
+	.module.contact-style2 .builder-contact-field-gdpr,
+	.module.contact-style2 .builder-contact-static-field,
+	.module.contact-style2 .builder-contact-upload-field,
+	.module.contact-style2 .builder-contact-field.builder-contact-field-captcha,
+	.module.contact-style2 .builder-contact-field.builder-contact-field-optin,
+	.module.contact-style2 .builder-contact-field.builder-contact-field-sendcopy,
+	.module.contact-style2 .builder-contact-field.builder-contact-field-send,
+	.module.contact-style2 .builder-contact-field.builder-contact-textarea-field,
+	.module.contact-style2 .builder-contact-textarea-field{
+		width:100%
+	}
+	.module.contact-style2 .control-label{
+		white-space:nowrap;
+		width:100%;
+		text-overflow:ellipsis;
+		overflow:hidden;
+		margin-right:0
+	}
+	.module.contact-style2 .builder-contact-field-gdpr .control-label{
+		overflow:inherit;
+		white-space:normal
+	}
+	/* Style 3 */
+	.module.contact-style3 .builder-contact-field,
+	.module.contact-style3 .builder-contact-field-message + .builder-contact-field-gdpr{
+		width:35%
+	}
+	.module.contact-style3 .builder-contact-field-message{
+		width:60%;
+		position:absolute;
+		top:0;
+		right:0
+	}
+	.rtl .module.contact-style3 .builder-contact-field-message{
+		left:0;
+		right:auto
+	}
+	/* Animated label style */
+	.module.contact-animated-label .control-label{
+		white-space:nowrap;
+		width:90%;
+		text-overflow:ellipsis;
+		overflow:hidden;
+		vertical-align:middle
+	}
+	.module.contact-animated-label .control-label .field-gdpr{
+		width:auto;
+		white-space:normal
+	}
+}
+@media(max-width:680px){
+	.module.contact-style2 .builder-contact-fields{
+		display:grid
+	}
+}
+/* recaptcha */
+.module-contact #recaptcha_area{
+	display:inline-block; /* fix alignment set by the module */
+}
+@media(max-width:575px){
+	.module-contact .themify_captcha_field{
+		width:100%;
+		transform:scale(.77);
+		transform-origin:0 0
+	}
+}
+.module.contact-animated-label label{
+	position:relative;
+	padding:0;
+	vertical-align:middle
+}
+.module.contact-animated-label textarea{
+	resize:none
+}
+.contact-animated-label .builder-contact-upload-field label{
+	top:0!important;
+	left:0!important
+}
+.form-control:not(:placeholder-shown)+.tb_contact_label,
+.form-control:focus+.tb_contact_label{
+    top:0;
+    left:0;
+    transform:translateY(-100%)
+}
+.contact-animated-label .builder-contact-textarea-field .control-label,
+.contact-animated-label .builder-contact-text-field .control-label{
+    visibility:hidden
+}
+.tb_contact_label{
+    position:absolute;
+    top:50%;
+    left:0;
+    right:0;
+    transform:translateY(-50%);
+    pointer-events:none;
+    transition-property:transform,top,left;
+    transition-duration:.3s;
+    padding-left:10px;
+    padding-right:10px
+}
+.builder-contact-textarea-field .tb_contact_label{
+	top:10px;
+	transform:translateY(0)
+}
+
+.tb_datepicker{
+    font:normal 13px/1.6 Arial,sans-serif;
+    color:#333;
+    border-radius:8px;
+    background:#fff;
+    box-shadow:0 0 0 1px rgba(0,0,0,.1), 0 4px 10px 2px rgba(0,0,0,.3);
+    padding:5px 10px;
+}
+.tb_datepicker .ui-datepicker-header{
+    background:0;
+    border:0;
+    border-bottom:1px solid rgba(0,0,0,.07);
+    border-radius:0;
+    padding-bottom:5px
+}
+.tb_datepicker .ui-datepicker-title select{
+    border:solid 1px rgba(0,0,0,.27);
+    border-radius:8px;
+    padding:0;
+    background:0;
+    appearance:auto
+}
+.ui-datepicker.tb_datepicker .ui-datepicker-prev,
+.ui-datepicker.tb_datepicker .ui-datepicker-next{
+    border:1px solid rgba(0,0,0,.07);
+    transition:border-color .2s ease-out
+}
+.ui-datepicker.tb_datepicker .ui-datepicker-prev .ui-icon,
+.ui-datepicker.tb_datepicker .ui-datepicker-next .ui-icon{
+    background:0;
+    text-indent:-99999em
+}
+.ui-datepicker.tb_datepicker .ui-datepicker-prev,
+.ui-datepicker.tb_datepicker .ui-datepicker-next{
+    top:2px;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    font-family:"dashicons";
+    box-sizing:border-box;
+	color:inherit
+}
+.ui-datepicker.tb_datepicker .ui-datepicker-next:after,
+.ui-datepicker.tb_datepicker .ui-datepicker-prev:after{
+    content:"\f141";
+    position:absolute;
+    top:2px;
+    font-size:20px;
+    left:0;
+    line-height:.8em
+}
+.ui-datepicker.tb_datepicker .ui-datepicker-next:after{
+    content:"\f139"
+}
+.ui-datepicker.tb_datepicker .ui-datepicker-prev-hover,
+.ui-datepicker.tb_datepicker .ui-datepicker-next-hover{
+    border:1px solid rgba(0,0,0,.4);
+    background:0;
+    right:2px;
+    top:2px;
+    cursor:pointer
+}
+.ui-datepicker.tb_datepicker .ui-datepicker-prev-hover{
+    right:auto;
+    left:2px
+}
+.ui-datepicker.tb_datepicker .ui-state-default{
+    background:#f6f6f6;
+    border-radius:8px;
+    border:2px solid transparent;
+    transition:border-color .2s ease-out;
+    color:inherit;
+    text-align:center
+}
+.ui-datepicker.tb_datepicker .ui-state-default:hover{
+    background:#ececec
+}
+.ui-datepicker.tb_datepicker .ui-state-default:hover{
+    background:#ececec
+}
+.ui-datepicker.tb_datepicker .ui-state-active,
+.ui-datepicker.tb_datepicker .ui-state-default:active{
+    border:2px solid #F90
+}
+.ui-datepicker.tb_datepicker .ui-state-highlight{
+    border:2px solid #98cee3
+}
+
+.ui-datepicker.tb_datepicker .ui-datepicker-buttonpane{
+    border-top:1px solid #eee;
+    padding:0
+}
+.ui-datepicker.tb_datepicker .ui-datepicker-buttonpane:after{
+    content:"";
+    clear:both;
+    display:block
+}
+.ui-datepicker.tb_datepicker .ui-datepicker-buttonpane button{
+    text-transform:none;
+    font-family:inherit;
+    font-weight:inherit;
+    font-size:1em;
+    background:#fafafa;
+    border:1px solid #eee;
+    color:#222;
+    outline:0;
+    opacity:1
+}
+.ui-datepicker.tb_datepicker .ui_tpicker_hour select,
+.ui-datepicker.tb_datepicker .ui_tpicker_minute select,
+.ui-datepicker.tb_datepicker .ui_tpicker_second select{
+    padding:0;
+    padding-right:10px;
+    appearance:auto
+}

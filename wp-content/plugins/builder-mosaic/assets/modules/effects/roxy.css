@@ -1,0 +1,43 @@
+.tbm_eff_roxy .tbm_caption_wrapper{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	height:100%
+}
+.module .tbm_eff_roxy img{
+	max-width:none;
+	width:calc(100% + 60px);
+	transition:opacity .35s,transform .35s;
+	transform:translate3d(-50px,0,0)
+}
+.tbm_eff_roxy figcaption::before{
+	position:absolute;
+	inset:0;
+	margin:30px;
+	border:1px solid rgba(255,255,255,.6);
+	content:'';
+	opacity:0;
+	transition:opacity .35s,transform .35s;
+	transform:translate3d(-20px,0,0)
+}
+.module .tbm_eff_roxy figcaption{
+	padding:3em;
+	text-align:left
+}
+.module .tbm_eff_roxy .tbm_title{
+	padding:0
+}
+.module .tbm_eff_roxy .tbm_caption{
+	opacity:0;
+	transition:opacity .35s,transform .35s;
+	transform:translate3d(-10px,0,0)
+}
+.module .tbm_eff_roxy:hover img{
+	opacity:.7;
+	transform:translate3d(0,0,0)
+}
+.tbm_eff_roxy:hover figcaption::before,
+.module .tbm_eff_roxy:hover .tbm_caption{
+	opacity:1;
+	transform:translate3d(0,0,0)
+}

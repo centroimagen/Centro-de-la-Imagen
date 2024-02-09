@@ -1,0 +1,19 @@
+.tbm_wrap_more{
+    margin-top:2em
+}
+.pagination-load-more .tbm_wrap_more{
+    display:block
+}
+.module .tbm_wrap_more a{
+    background:#eee;
+    border:0;
+    font-size:1.2em;
+    line-height:1.1em;
+    padding:.6em 1.3em;
+    color:#333;
+	border-radius:30px
+}
+.tbm_wrap_more a:before,
+.tbm_wrap_more a:after{
+    display:none
+}

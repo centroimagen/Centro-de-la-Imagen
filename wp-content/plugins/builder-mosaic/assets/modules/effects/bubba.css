@@ -1,0 +1,52 @@
+.tbm_eff_bubba .tbm_caption_wrapper{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	height:100%
+}
+.module .tbm_eff_bubba img{
+	opacity:.7;
+	transition:opacity .35s
+}
+.tbm_eff_bubba figcaption::before,
+.tbm_eff_bubba figcaption::after{
+	position:absolute;
+	inset:30px;
+	content:'';
+	opacity:0;
+	border:1px solid rgba(255,255,255,.6);
+	transition:opacity .35s,transform .35s
+}
+.tbm_eff_bubba figcaption::before{
+	border-right:0;
+	border-left:0;
+	transform:scale(0,1)
+}
+.tbm_eff_bubba figcaption::after{
+	border-top:0;
+	border-bottom:0;
+	transform:scale(1,0)
+}
+.module .tbm_eff_bubba .tbm_title{
+	transition:transform .35s;
+	transform:translate3d(0,-20px,0)
+}
+.module .tbm_eff_bubba .tbm_caption{
+	padding:0 2.5em 20px;
+	opacity:0;
+	transition:opacity .35s,transform .35s;
+	transform:translate3d(0,20px,0)
+}
+.module .tbm_eff_bubba:hover img{
+	opacity:.4
+}
+.tbm_eff_bubba:hover figcaption::before,
+.tbm_eff_bubba:hover figcaption::after{
+	opacity:1;
+	transform:scale(1)
+}
+.module .tbm_eff_bubba:hover .tbm_title,
+.module .tbm_eff_bubba:hover .tbm_caption{
+	opacity:1;
+	transform:translate3d(0,0,0)
+}
